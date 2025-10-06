@@ -1,0 +1,293 @@
+:root {
+  --background-section: var(--base-5);
+  --background-panel: var(--base-4);
+  --background-card: var(--base-5);
+  --background-card-hover: var(--base-1);
+  --color-display: var(--base-1);
+  --panel-radius: var(--radius-nil);
+  --card-radius: var(--radius-nil);
+  --image-radius: var(--radius-nil);
+  --color-headline: var(--base-1);
+  --color-body: var(--base-1);
+  --color-body-secondary: var(--base-2);
+  --color-utility: var(--base-1);
+  --color-quote: var(--base-1);
+  --color-stats: var(--base-1);
+  --color-pictogram: var(--base-1);
+  --button-radius: var(--radius-nil);
+  --input-radius: var(--radius-nil);
+  --card-shadow-colour: var(--dark-25);
+  --card-shadow-offset: var(--radius-nil);
+  --card-shadow-blur: var(--radius-nil);
+  --panel-shadow-colour: var(--dark-25);
+  --panel-shadow-offset: var(--radius-nil);
+  --panel-shadow-blur: var(--radius-nil);
+  --lg-1: clamp(4.8rem, 2.5774rem + 5.8491vw, 11rem);
+  --lg-2: clamp(4rem, 2.2792rem + 4.5283vw, 8.8rem);
+  --lg-3: clamp(3.6rem, 2.0226rem + 4.1509vw, 8rem);
+  --lg-4: clamp(3.2rem, 1.766rem + 3.7736vw, 7.2rem);
+  --md-1: clamp(2.8rem, 1.5094rem + 3.3962vw, 6.4rem);
+  --md-2: clamp(2.4rem, 1.2528rem + 3.0189vw, 5.6rem);
+  --md-3: clamp(2rem, 0.9962rem + 2.6415vw, 4.8rem);
+  --md-4: clamp(2rem, 1.283rem + 1.8868vw, 4rem);
+  --sm-1: clamp(2rem, 1.5698rem + 1.1321vw, 3.2rem);
+  --sm-2: clamp(1.6rem, 1.3132rem + 0.7547vw, 2.4rem);
+  --sm-3: clamp(1.2rem, 1.0566rem + 0.3774vw, 1.6rem);
+  --sm-4: clamp(0.8rem, 0.6566rem + 0.3774vw, 1.2rem);
+  --xs-1: clamp(0.8rem, 0.8rem + 0vw, 0.8rem);
+  --xs-2: clamp(0.4rem, 0.4rem + 0vw, 0.4rem);
+  --nil: clamp(0rem, 0rem + 0vw, 0rem);
+  --radius-nil: 0px;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 16px;
+  --radius-xxl: 24px;
+  --primary-1: #ff4b00;
+  --primary-2: #8d1aff;
+  --primary-3: #ffd51a;
+  --primary-4: #009fe3;
+  --primary-5: #eb3323;
+  --primary-6: #30e403;
+  --secondary-1: #e65600;
+  --secondary-2: #934ea3;
+  --secondary-3: #c49757;
+  --secondary-4: #1567a4;
+  --secondary-5: #c62931;
+  --secondary-6: #8a986d;
+  --base-1: #12181f;
+  --base-2: #757575;
+  --base-3: #dadada;
+  --base-4: #f1f3f6;
+  --base-5: #fff;
+  --blue-1: #0c3c60;
+  --blue-2: #1567a4;
+  --blue-3: #07243a;
+  --green-1: #2a2e20;
+  --green-2: #626c4c;
+  --green-3: #8a986d;
+  --yellow-1: #c49757;
+  --yellow-2: #1f160b;
+  --purple-1: #2f1a35;
+  --purple-2: #64356f;
+  --dark-transparent: #0000;
+  --dark-5: #0000000d;
+  --dark-10: #0000001a;
+  --dark-25: #00000040;
+  --dark-50: #00000080;
+  --dark-75: #000000bf;
+  --light-transparent: #fff0;
+  --light-5: #ffffff0d;
+  --light-10: #ffffff1a;
+  --light-25: #ffffff40;
+  --light-50: #ffffff80;
+  --light-75: #ffffffbf;
+  --error: #d91010;
+  --success: #3acd07;
+  --primitive-family-titles: "Jost";
+  --primitive-family-body: "Jost";
+  --primitive-family-secondary-font: "Bodoni Moda";
+  --primitive-weight-light: "Light";
+  --primitive-weight-regular: "Regular";
+  --primitive-weight-medium: "Medium";
+  --primitive-weight-semi-bold: "Semi Bold";
+  --primitive-weight-bold: "Bold";
+  --primitive-weight-extra-bold: "Extra Bold";
+  --display-l-font-size: clamp(3.6rem, 2.3811rem + 3.2075vw, 7rem);
+  --display-l-line-height: clamp(4.4rem, 3.1094rem + 3.3962vw, 8rem);
+  --display-l-letter-spacing: 0px;
+  --display-l-font-family: var(--primitive-family-titles);
+  --display-l-weight: var(--primitive-weight-light);
+  --display-m-font-size: clamp(2.8rem, 2.083rem + 1.8868vw, 4.8rem);
+  --display-m-line-height: clamp(2.8rem, 2.083rem + 1.8868vw, 4.8rem);
+  --display-m-letter-spacing: 0px;
+  --display-m-font-family: var(--primitive-family-titles);
+  --display-m-weight: var(--primitive-weight-light);
+  --display-s-font-size: clamp(2.4rem, 1.8264rem + 1.5094vw, 4rem);
+  --display-s-line-height: clamp(3.2rem, 2.483rem + 1.8868vw, 5.2rem);
+  --display-s-letter-spacing: 0px;
+  --display-s-font-family: var(--primitive-family-titles);
+  --display-s-weight: var(--primitive-weight-regular);
+  --headline-l-font-size: clamp(2rem, 1.5698rem + 1.1321vw, 3.2rem);
+  --headline-l-line-height: clamp(2.8rem, 2.2264rem + 1.5094vw, 4.4rem);
+  --headline-l-letter-spacing: 0px;
+  --headline-l-font-family: var(--primitive-family-titles);
+  --headline-l-weight: var(--primitive-weight-light);
+  --headline-m-font-size: clamp(1.8rem, 1.5849rem + 0.566vw, 2.4rem);
+  --headline-m-line-height: clamp(2.4rem, 2.1132rem + 0.7547vw, 3.2rem);
+  --headline-m-letter-spacing: 0px;
+  --headline-m-font-family: var(--primitive-family-titles);
+  --headline-m-weight: var(--primitive-weight-light);
+  --headline-s-font-size: clamp(1.6rem, 1.4566rem + 0.3774vw, 2rem);
+  --headline-s-line-height: clamp(1.6rem, 1.4566rem + 0.3774vw, 2rem);
+  --headline-s-letter-spacing: 0px;
+  --headline-s-font-family: var(--primitive-family-titles);
+  --headline-s-weight: var(--primitive-weight-light);
+  --body-l-font-size: clamp(1.6rem, 1.3849rem + 0.566vw, 2.2rem);
+  --body-l-line-height: clamp(2.4rem, 2.1132rem + 0.7547vw, 3.2rem);
+  --body-l-letter-spacing: 0px;
+  --body-l-font-family: var(--primitive-family-body);
+  --body-l-weight: var(--primitive-weight-regular);
+  --body-m-font-size: clamp(1.6rem, 1.5283rem + 0.1887vw, 1.8rem);
+  --body-m-line-height: clamp(2.4rem, 2.2566rem + 0.3774vw, 2.8rem);
+  --body-m-letter-spacing: 0px;
+  --body-m-font-family: var(--primitive-family-body);
+  --body-m-weight: var(--primitive-weight-regular);
+  --body-s-font-size: clamp(1.4rem, 1.3283rem + 0.1887vw, 1.6rem);
+  --body-s-line-height: clamp(2rem, 1.8566rem + 0.3774vw, 2.4rem);
+  --body-s-letter-spacing: 0px;
+  --body-s-font-family: var(--primitive-family-body);
+  --body-s-weight: var(--primitive-weight-regular);
+  --body-xs-font-size: clamp(1.2rem, 1.1283rem + 0.1887vw, 1.4rem);
+  --body-xs-line-height: clamp(2rem, 1.8566rem + 0.3774vw, 2.4rem);
+  --body-xs-letter-spacing: 0px;
+  --body-xs-font-family: var(--primitive-family-body);
+  --body-xs-weight: var(--primitive-weight-regular);
+  --quote-l-font-size: clamp(2.4rem, 1.5396rem + 2.2642vw, 4.8rem);
+  --quote-l-line-height: clamp(3.6rem, 2.7396rem + 2.2642vw, 6rem);
+  --quote-l-letter-spacing: 0px;
+  --quote-l-font-family: var(--primitive-family-titles);
+  --quote-l-weight: var(--primitive-weight-light);
+  --quote-m-font-size: clamp(1.6rem, 1.3132rem + 0.7547vw, 2.4rem);
+  --quote-m-line-height: clamp(2.4rem, 1.8264rem + 1.5094vw, 4rem);
+  --quote-m-letter-spacing: 0px;
+  --quote-m-font-family: var(--primitive-family-titles);
+  --quote-m-weight: var(--primitive-weight-light);
+  --nav-l-font-size: clamp(1.4rem, 1.1132rem + 0.7547vw, 2.2rem);
+  --nav-m-font-size: clamp(1.2rem, 1.0566rem + 0.3774vw, 1.6rem);
+  --nav-s-font-size: clamp(1rem, 0.8566rem + 0.3774vw, 1.4rem);
+  --stat-l-font-size: clamp(4.8rem, 2.2189rem + 6.7925vw, 12rem);
+  --button-font-size: clamp(1.2rem, 0.9849rem + 0.566vw, 1.8rem);
+  --button-line-height: clamp(2rem, 1.8566rem + 0.3774vw, 2.4rem);
+  --button-letter-spacing: 0px;
+  --button-font-family: var(--primitive-family-titles);
+  --button-weight: var(--primitive-weight-medium);
+  --nav-l-line-height: clamp(1.6rem, 0.883rem + 1.8868vw, 3.6rem);
+  --nav-l-letter-spacing: 0.20000000298023224px;
+  --nav-l-font-family: var(--primitive-family-titles);
+  --nav-l-weight: var(--primitive-weight-regular);
+  --nav-m-line-height: clamp(1.2rem, 0.7698rem + 1.1321vw, 2.4rem);
+  --nav-m-letter-spacing: 0px;
+  --nav-m-font-family: var(--primitive-family-titles);
+  --nav-m-weight: var(--primitive-weight-medium);
+  --nav-s-line-height: clamp(1rem, 0.6415rem + 0.9434vw, 2rem);
+  --nav-s-letter-spacing: 0px;
+  --nav-s-font-family: var(--primitive-family-titles);
+  --nav-s-weight: var(--primitive-weight-medium);
+  --stat-m-font-size: clamp(3.2rem, 2.0528rem + 3.0189vw, 6.4rem);
+  --breadcrumb-default-font-size: clamp(1.2rem, 1.1283rem + 0.1887vw, 1.4rem);
+  --breadcrumb-default-line-height: clamp(1.6rem, 1.4566rem + 0.3774vw, 2rem);
+  --breadcrumb-default-letter-spacing: 0px;
+  --breadcrumb-default-font-family: var(--primitive-family-body);
+  --breadcrumb-default-weight: var(--primitive-weight-regular);
+  --breadcrumb-active-font-size: clamp(1.2rem, 1.1283rem + 0.1887vw, 1.4rem);
+  --breadcrumb-active-line-height: clamp(1.6rem, 1.4566rem + 0.3774vw, 2rem);
+  --breadcrumb-active-letter-spacing: 0px;
+  --breadcrumb-active-font-family: var(--primitive-family-body);
+  --breadcrumb-active-weight: var(--primitive-weight-semi-bold);
+  --tag-font-size: clamp(1.2rem, 1.1283rem + 0.1887vw, 1.4rem);
+  --icon-font-size: clamp(1.6rem, 1.3132rem + 0.7547vw, 2.4rem);
+  --tag-line-height: clamp(1.4rem, 1.3283rem + 0.1887vw, 1.6rem);
+  --tag-letter-spacing: 0.800000011920929px;
+  --tag-font-family: var(--primitive-family-titles);
+  --tag-weight: var(--primitive-weight-medium);
+  --stat-l-line-height: clamp(4.8rem, 2.2189rem + 6.7925vw, 12rem);
+  --stat-l-letter-spacing: 0px;
+  --stat-l-font-family: var(--primitive-family-secondary-font);
+  --stat-l-weight: var(--primitive-weight-regular);
+  --stat-m-line-height: clamp(3.2rem, 1.766rem + 3.7736vw, 7.2rem);
+  --stat-m-letter-spacing: 0px;
+  --stat-m-font-family: var(--primitive-family-secondary-font);
+  --stat-m-weight: var(--primitive-weight-regular);
+  --section-title-font-size: clamp(1.8rem, 1.4415rem + 0.9434vw, 2.8rem);
+  --section-title-line-height: clamp(2.4rem, 2.1132rem + 0.7547vw, 3.2rem);
+  --section-title-letter-spacing: 0px;
+  --section-title-font-family: var(--primitive-family-secondary-font);
+  --section-title-weight: var(--primitive-weight-semi-bold);
+  --label-font-size: clamp(1.2rem, 1.1642rem + 0.0943vw, 1.3rem);
+  --label-line-height: clamp(1.4rem, 1.3283rem + 0.1887vw, 1.6rem);
+  --label-letter-spacing: 0px;
+  --label-font-family: var(--primitive-family-body);
+  --label-weight: var(--primitive-weight-medium)
+}
+@media (width >= 768px) {
+  :root {
+    --radius-nil: 0px;
+    --radius-xs: 2px;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 24px;
+    --radius-xxl: 40px
+  }
+}
+@media (width >= 1200px) {
+  :root {
+    --radius-nil: 0px;
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 40px;
+    --radius-xxl: 60px
+  }
+}
+.card-dark,
+.panel-dark,
+.section-dark,
+.theme-dark {
+  --background-section: var(--base-1);
+  --background-panel: var(--base-1);
+  --background-card: var(--base-1);
+  --background-card-hover: var(--base-2);
+  --color-display: var(--base-5);
+  --color-headline: var(--base-5);
+  --color-body: var(--base-5);
+  --color-body-secondary: var(--base-3);
+  --color-utility: var(--base-5);
+  --color-quote: var(--base-5);
+  --color-stats: var(--base-5);
+  --color-pictogram: var(--base-5)
+}
+.card-light,
+.panel-light,
+.section-light,
+.theme-light {
+  --background-section: var(--base-5);
+  --background-panel: var(--base-4);
+  --background-card: var(--base-5);
+  --background-card-hover: var(--base-1);
+  --color-display: var(--base-1);
+  --color-headline: var(--base-1);
+  --color-body: var(--base-1);
+  --color-body-secondary: var(--base-2);
+  --color-utility: var(--base-1);
+  --color-quote: var(--base-1);
+  --color-stats: var(--base-1);
+  --color-pictogram: var(--base-1)
+}
+:root {
+  --gradient-bottom-light: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+  --gradient-top-light: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  --gradient-left-light: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  --gradient-right-light: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  --gradient-bottom-dark: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(18, 24, 31, 0.5) 100%);
+  --gradient-top-dark: linear-gradient(180deg, rgba(18, 24, 31, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  --gradient-left-dark: linear-gradient(90deg, rgba(18, 24, 31, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  --gradient-right-dark: linear-gradient(270deg, rgba(18, 24, 31, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  --gradient-tint-dark-50: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  --none: none;
+  --xs: 0px 1px 3px 0px rgba(0, 0, 0, 0.10),0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  --sm: 0px 4px 8px -2px rgba(0, 0, 0, 0.10),0px 2px 4px -2px rgba(0, 0, 0, 0.06);
+  --md: 0px 12px 16px -4px rgba(0, 0, 0, 0.08),0px 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --lg: 0px 20px 24px -4px rgba(0, 0, 0, 0.08),0px 8px 8px -4px rgba(0, 0, 0, 0.03);
+  --xl: 0px 24px 48px -12px rgba(0, 0, 0, 0.18);
+  --xxl: 0px 24px 48px -12px rgba(0, 0, 0, 0.18);
+  --primitive-weight-light: 300;
+  --primitive-weight-regular: 400;
+  --primitive-weight-medium: 500;
+  --primitive-weight-semi-bold: 600;
+  --primitive-weight-bold: 700;
+  --primitive-weight-extra-bold: 800
+}
