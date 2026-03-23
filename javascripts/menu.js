@@ -36,7 +36,8 @@ function initiateMmenu() {
                 const menuExpand = document.querySelector('[data-menu-expand]');
                 const menuExpandValue = menuExpand.getAttribute('data-menu-expand');
 				const submenusExpand = (menuExpandValue === 'true') ? false : true;
-                 mmenuInstance = new Mmenu("#menu", {
+                 mmenuInstance = (import('/javascripts/mmenu.js')).default;
+new MmenuLib('#menu', {
                         slidingSubmenus: submenusExpand,
                         theme: "white",
                         offCanvas: {
@@ -182,3 +183,6 @@ document.addEventListener('DOMContentLoaded', MenuToggles);
 document.addEventListener('DOMContentLoaded', checkUtility);
 document.addEventListener('DOMContentLoaded', initSignpostImage);
 window.addEventListener("resize", initiateMmenu);
+if (typeof window !== 'undefined') {
+  window.Mmenu = Mmenu;
+}
