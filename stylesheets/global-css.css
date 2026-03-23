@@ -74,7 +74,7 @@ a:focus-visible {
 }
 @font-face {
   font-family: icomoon;
-  src: url(/~/media/Files/D/debeers-v2/font-files/icomoon/icomoon-ttf.ttf?iefix) format("truetype"),url(/~/media/Files/D/debeers-v2/font-files/icomoon/icomoon-woff.woff?iefix) format("woff"),url(/~/media/Files/D/debeers-v2/font-files/icomoon/icomoon-svg.svg?iefix#icomoon) format("svg");
+  src: url(/~/media/Files/D/cdm-partners/font-files/icomoon/icomoon-ttf.ttf?iefix) format("truetype"),url(/~/media/Files/D/cdm-partners/font-files/icomoon/icomoon-woff.woff?iefix) format("woff"),url(/~/media/Files/D/cdm-partners/font-files/icomoon/icomoon-svg.svg?iefix#icomoon) format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: block
